@@ -1,0 +1,41 @@
+{
+    "group": [
+        {
+            "group_id": "0",
+            "Gruppenleiter": {
+                "vorname": "Dieter",
+                "nachname": "Mosel",
+                "email": "dieter@gmx.de",
+                "geburtsdatum": "20.11.1967",
+                "erfahrung": "Profi",
+                "schlagzeug": "vorhanden",
+                "anmerkung": "blabla"
+            },
+            "Mitglieder": {
+                "Mitglied": [
+                    {
+                        "mit_id": "0",
+                        "vorname": "Bärbel",
+                        "nachname": "Schäfer",
+                        "email": "b.schaefer@gmx.de",
+                        "geburtsdatum": "11.11.1967",
+                        "erfahrung": "Profi",
+                        "schlagzeug": "vorhanden",
+                        "anmerkung": "blablabli"
+                    },
+                    {
+                        "mit_id": "1",
+                        "vorname": "Hans Peter",
+                        "nachname": "Dick",
+                        "email": "dick@gmx.net",
+                        "geburtsdatum": "15.03.1970",
+                        "erfahrung": "Erfahren",
+                        "schlagzeug": " nicht vorhanden",
+                        "anmerkung": "blablabliblah"
+                    }
+                ]
+            },
+            "AGBcheck": "true"
+        }
+    ]
+}
