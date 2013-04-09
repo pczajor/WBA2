@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<xs:element name="rezepte" type="rezepteType"/>
+
+
+<xs:complexType name="rezepteType">
+	<xs:sequence>
+		<xs:element name="rezept" type="rType" maxOccurs="unbounded" minOccurs="0"/> <!-- minOccurs="0" macht wenig Sinn, doch ist semantisch korrekt -->
+	</xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="rType">
+	<xs:sequence>
+		<xs:element name="titel" type="xs:string"/>
+		<xs:element name="fotos" type="fotosType"/>
+		<xs:element name="zutaten" type="zutatenType"/>
+		<xs:element name="portionen" type="xs:positiveInteger"/>	
+		<xs:element name ="arbeitszeit" type="xs:string" />
+		<xs:element name="schwierigkeit" type="schwType" />
+		<xs:element name="brennwert" type="brennType" />
+		<xs:element name="zubereitung" type="xs:string" />
+		<xs:element name="kommentare" type="kommentarType"/>
+	</xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="fotosType">
+	<xs:sequence>
+		<xs:element name="foto" type="fType" maxOccurs="unbounded" minOccurs="0"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fType">
+	<xs:sequence>
+		<xs:element name="benutzer" type="xs:string"/>
+		<xs:element name="bildadresse" type="xs:anyURI"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="zutatenType">
+	<xs:sequence >
+	 <xs:element name ="zutat" type="zType" maxOccurs="unbounded" minOccurs="1" />
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="zType">
+		<xs:attribute name="Name" type="xs:string"/>
+		<xs:attribute name="menge">
+			<xs:simpleType>
+			<xs:restriction base="xs:decimal">
+				<xs:minInclusive value="0"/>
+			</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>                  
+		<xs:attribute name="einheit" type="xs:string"/>
+</xs:complexType>
+
+<xs:simpleType name="schwType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="leicht"/>
+		<xs:enumeration value="normal"/>
+		<xs:enumeration value="schwer"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+<xs:complexType name="brennType" >
+	<xs:attribute name="wert" type="xs:positiveInteger" />
+	<xs:attribute name="einheit" type="xs:string"/>
+</xs:complexType>
+
+
+<xs:complexType name="kommentarType">
+	<xs:sequence>
+		<xs:element name="kommentar" type="kType"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="kType">
+	<xs:sequence>
+		<xs:element name="avatar" type="fType"/>
+		<xs:element name="user" type="xs:string"/>
+		<xs:element name="datum" type="xs:dateTime" />
+		<xs:element name="nachricht" type="xs:string"/>
+	</xs:sequence>
+</xs:complexType>
+</xs:schema>
