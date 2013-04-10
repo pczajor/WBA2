@@ -1,3 +1,5 @@
+import generated.KType;
+import generated.ObjectFactory;
 import generated.RType;
 import generated.RezepteType;
 
@@ -23,14 +25,13 @@ public class Main {
 		
 		in = new Scanner(System.in);
 		int auswahl;
-		
-		
+		;
 		String xmlDatei = Rezepte.XML;
 		
-		 JAXBContext context = JAXBContext.newInstance(RType.class);
+		 JAXBContext context = JAXBContext.newInstance(RezepteType.class);
 		 Unmarshaller u = context.createUnmarshaller();
 		 
-		 RezepteType rezeptliste = (RezepteType) u.unmarshal(new FileReader(xmlDatei));
+		 RezepteType rezeptliste = (RezepteType) u.unmarshal(new StreamSource(new File(xmlDatei)), RezepteType.class).getValue();
 		 ArrayList<RType> liste = (ArrayList<RType>) rezeptliste.getRezept();
 		 
 		 if(liste.isEmpty()){
@@ -60,6 +61,38 @@ public class Main {
 	                case 1:
 	                	Rezepte.rezeptListe(liste);
 	                break;
+	                case 2:
+	                	do{
+	                		System.out.println("Bitte geben Sie eine Rezeptnummer ein.");
+	                		rezeptauswahl = in.nextInt();
+	                		if(rezeptauswahl <0 || rezeptauswahl>liste.size())
+	                			System.out.println("Kein Rezept unter dieser Nummer gefunden.");
+	                		else if(rezeptauswahl==0)break;
+	                		else Rezepte.rezeptZeigen(liste.get(rezeptauswahl-1));
+	                		
+	                	
+	                	}
+	                	while(rezeptauswahl < 0 || rezeptauswahl>liste.size());
+	                break;	
+	                case 3:
+	                	do{
+		                	System.out.println("Bitte geben Sie eine Rezeptnummer ein.");
+		                	rezeptauswahl = in.nextInt();
+		                	if(rezeptauswahl <0 || rezeptauswahl>liste.size())
+		                		System.out.println("Kein Rezept unter dieser Nummer gefunden.");
+		                	else if(rezeptauswahl==0)break;
+		                	else{
+		                		ArrayList<KType> kommentarListe = (ArrayList<KType>)liste.get(rezeptauswahl-1).getKommentare().getKommentar();
+		                		Rezepte.rezeptKommentieren(kommentarListe);
+		                		
+		                		Marshaller m = context.createMarshaller();
+		                		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+		                		m.marshal(new ObjectFactory().createRezepte(rezeptliste), new File(xmlDatei));
+		                	}
+		                	
+		                	}
+		                	while(rezeptauswahl < 0 || rezeptauswahl>liste.size());
+	                break;	
 	                default:
 	                    continue;
 	            }

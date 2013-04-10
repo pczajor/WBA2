@@ -75,7 +75,7 @@
 
 <xs:complexType name="kommentarType">
 	<xs:sequence>
-		<xs:element name="kommentar" type="kType"/>
+		<xs:element name="kommentar" type="kType"  maxOccurs="unbounded" minOccurs="0"/>
 	</xs:sequence>
 </xs:complexType>
 

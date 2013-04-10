@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rezepte>
+    <rezept>
+        <titel>Lenchen's Schokoladenkuchen</titel>
+        <fotos>
+            <foto>
+                <benutzer>cookie1205</benutzer>
+                <bildadresse>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/46186-960x720-lenchen-s-schokoladenkuchen.jpg</bildadresse>
+            </foto>
+        </fotos>
+        <zutaten>
+            <zutat einheit="g" menge="200" Name="Butter"/>
+            <zutat einheit="g" menge="200" Name="Zucker"/>
+            <zutat einheit="g" menge="200" Name="Schokolade"/>
+            <zutat einheit="g" menge="120" Name="Mehl"/>
+            <zutat einheit="TL" menge="0.5" Name="Backpulver"/>
+            <zutat einheit="Pkt" menge="1" Name="Vanillezucker"/>
+            <zutat menge="4" Name="Eier"/>
+        </zutaten>
+        <portionen>16</portionen>
+        <arbeitszeit> ca 1. Std</arbeitszeit>
+        <schwierigkeit>normal</schwierigkeit>
+        <brennwert einheit="kcal" wert="295"/>
+        <zubereitung>
+Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. 
+Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
+Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig unterheben. In eine gut gefettete Form geben. 
+Bei 180°Grad 40 – 50 Minuten backen.
+		</zubereitung>
+        <kommentare>
+            <kommentar>
+                <avatar>
+                    <benutzer>swielechen</benutzer>
+                    <bildadresse>http://static.chefkoch-cdn.de/ck.de/avatar/5ab77fec95e69919037a2ea283c4d6a6-60fix.jpg</bildadresse>
+                </avatar>
+                <user>swielechen</user>
+                <datum>2008-07-10T19:35:00+01:00</datum>
+                <nachricht>Habe Deinen Kuchen gestern 
+gebacken (kleine Abwandlung: statt Blockschokolade 
+hatte ich nur Kuvertüre, zartbitter und ich habe noch etwas 
+Rumaroma und eine Prise Salz dazugegeben) mein LAG war total begeistert. 
+Ich übrigends auch, super Rezept.</nachricht>
+            </kommentar>
+            <kommentar>
+                <user>smithes</user>
+                <datum>2013-04-10T16:04:27.680+02:00</datum>
+                <nachricht>Alles top</nachricht>
+            </kommentar>
+        </kommentare>
+    </rezept>
+</rezepte>
