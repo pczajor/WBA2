@@ -10,7 +10,8 @@
 		<schlagzeug>vorhanden</schlagzeug>
 		<anmerkung>blabla</anmerkung>
 	</gruppenleiter>
-	
+	 
+	<mitglieder>
 	<person1>
 		<mit_id>0</mit_id>
 		<vorname>Bärbel</vorname>
@@ -32,6 +33,6 @@
 		<schlagzeug>nicht vorhanden</schlagzeug>
 		<anmerkung>blablabliblah</anmerkung>
 	</person2>
-
+	</mitglieder>
 	<AGBcheck>true</AGBcheck>
 </gruppe>
