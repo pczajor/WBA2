@@ -11,19 +11,19 @@
                 "schlagzeug": "vorhanden",
                 "anmerkung": "blabla"
             },
-            "Mitglieder": {
-                "Mitglied": [
-                    {
+            "Mitglieder": [
+                {
+                    "Person1": {
                         "mit_id": "0",
-                        "vorname": "B‰rbel",
-                        "nachname": "Sch‰fer",
+                        "vorname": "B√§rbel",
+                        "nachname": "Sch√§fer",
                         "email": "b.schaefer@gmx.de",
                         "geburtsdatum": "11.11.1967",
                         "erfahrung": "Profi",
                         "schlagzeug": "vorhanden",
                         "anmerkung": "blablabli"
                     },
-                    {
+                    "Person2": {
                         "mit_id": "1",
                         "vorname": "Hans Peter",
                         "nachname": "Dick",
@@ -33,8 +33,8 @@
                         "schlagzeug": " nicht vorhanden",
                         "anmerkung": "blablabliblah"
                     }
-                ]
-            },
+                }
+            ],
             "AGBcheck": "true"
         }
     ]
