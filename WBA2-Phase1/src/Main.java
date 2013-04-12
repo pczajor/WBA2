@@ -53,7 +53,7 @@ public class Main {
 
 	            auswahl = in.nextInt();
 	    
-	            System.out.println();
+	            System.out.println("[------------------------]");
 	    
 	            int rezeptauswahl = -1;
 	    
