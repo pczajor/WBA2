@@ -42,7 +42,8 @@ public class Rezepte {
 		System.out.println("Zutaten:");
 		List<ZType> zutaten =rezept.getZutaten().getZutat();
 		for (ZType zutat: zutaten){
-			System.out.print(zutat.getName()+": "+zutat.getMenge()+" ");
+			System.out.print(zutat.getName()+": ");
+			if (zutat.getMenge()!=null)System.out.print(zutat.getMenge());
 			if (zutat.getEinheit()!=null)System.out.println(zutat.getEinheit());
 		}
 		
@@ -58,6 +59,7 @@ public class Rezepte {
 			System.out.println("\n"+ item.getUser()+" "+item.getDatum());
 			if (item.getAvatar()!=null)System.out.println(item.getAvatar().getBildadresse());
 			System.out.println(item.getNachricht());
+			System.out.println("---------------------------------");
 		}
 	}
 	
