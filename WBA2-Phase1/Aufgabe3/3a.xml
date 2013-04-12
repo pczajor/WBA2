@@ -9,18 +9,18 @@
             </foto>
         </fotos>
         <zutaten>
-            <zutat einheit="g" menge="200" Name="Butter"/>
-            <zutat einheit="g" menge="200" Name="Zucker"/>
-            <zutat einheit="g" menge="200" Name="Schokolade"/>
-            <zutat einheit="g" menge="120" Name="Mehl"/>
-            <zutat einheit="TL" menge="0.5" Name="Backpulver"/>
-            <zutat einheit="Pkt" menge="1" Name="Vanillezucker"/>
-            <zutat menge="4" Name="Eier"/>
+            <zutat Name="Butter" menge="200" einheit="g"/>
+            <zutat Name="Zucker" menge="200" einheit="g"/>
+            <zutat Name="Schokolade" menge="200" einheit="g"/>
+            <zutat Name="Mehl" menge="120" einheit="g"/>
+            <zutat Name="Backpulver" menge="0.5" einheit="TL"/>
+            <zutat Name="Vanillezucker" menge="1" einheit="Pkt"/>
+            <zutat Name="Eier" menge="4"/>
         </zutaten>
         <portionen>16</portionen>
         <arbeitszeit> ca 1. Std</arbeitszeit>
         <schwierigkeit>normal</schwierigkeit>
-        <brennwert einheit="kcal" wert="295"/>
+        <brennwert wert="295" einheit="kcal"/>
         <zubereitung>
 Butter und Schokolade im Wasserbad schmelzen. Eier trennen. Eiweiß steif schlagen. 
 Eigelbe, Zucker und Vanillezucker verrühren. Geschmolzene Butter-Schokomasse hinzufügen und mischen. 
@@ -45,6 +45,66 @@ Ich übrigends auch, super Rezept.</nachricht>
                 <user>smithes</user>
                 <datum>2013-04-10T16:04:27.680+02:00</datum>
                 <nachricht>Alles top</nachricht>
+            </kommentar>
+            <kommentar>
+                <user>pczajor</user>
+                <datum>2013-04-10T18:08:24.849+02:00</datum>
+                <nachricht>klappt ja ganz gut hier^^</nachricht>
+            </kommentar>
+        </kommentare>
+    </rezept>
+    <rezept>
+        <titel>Überbackener Ziegenkäse mit Honigsauce</titel>
+        <fotos>
+            <foto>
+                <benutzer>angelika1m</benutzer>
+                <bildadresse>http://static.chefkoch-cdn.de/ck.de/rezepte/46/46387/65315-960x720-fischragout-mit-gemuese.jpg</bildadresse>
+            </foto>
+        </fotos>
+        <zutaten>
+            <zutat Name="Pinienkerne" menge="2" einheit="EL"/>
+            <zutat Name="Äpfel" menge="2" einheit="große"/>
+            <zutat Name="Ziegenfrischkäse, ca. 1 cm dick geschnitten" menge="4" einheit="Scheiben"/>
+            <zutat Name="Salat (z.B. Rucola), einige Blätter davon" einheit="etwas"/>
+            <zutat Name="Honig" menge="2" einheit="EL"/>
+            <zutat Name="Butter" menge="1" einheit="EL"/>
+            <zutat Name="Balsamico" menge="0.5" einheit="EL"/>
+        </zutaten>
+        <portionen>4</portionen>
+        <arbeitszeit> ca 40 Min</arbeitszeit>
+        <schwierigkeit>normal</schwierigkeit>
+        <brennwert einheit="keine Angabe"/>
+        <zubereitung>
+Den Ofen auf 225°C vorheizen.
+
+Die Pinienkerne unter Umrühren in einer Pfanne ohne Fett rösten. Die Äpfel in vier große Scheiben mit ca. 1,5 cm Dicke schneiden. Das Kerngehäuse entfernen. Die Apfelscheiben in eine gefettete Form legen und jeweils eine Scheibe Käse obenauf legen. Ca. 20 Minuten überbacken, bis der Käse schön goldgelb ist.
+
+Den Salat waschen und die Blätter auf Portionstellern anrichten. Den überbackenen Käse auf den Salat setzen. Mit den Pinienkernen bestreuen.
+Honig, Butter und Balsamico in die noch warme Form geben und verrühren. Die Sauce über den Käse gießen und servieren.
+		</zubereitung>
+        <kommentare>
+            <kommentar>
+                <avatar>
+                    <benutzer>swielechen</benutzer>
+                    <bildadresse>http://static.chefkoch-cdn.de/ck.de/avatar/5ab77fec95e69919037a2ea283c4d6a6-60fix.jpg</bildadresse>
+                </avatar>
+                <user>Eicki</user>
+                <datum>2008-07-10T19:35:00+01:00</datum>
+                <nachricht>Hallo Minusch, 
+
+nur ein Kommentar . fantastisch. 
+
+Danke Eicki</nachricht>
+            </kommentar>
+            <kommentar>
+                <user>pczajor</user>
+                <datum>2013-04-12T12:07:50.374+02:00</datum>
+                <nachricht>test</nachricht>
+            </kommentar>
+            <kommentar>
+                <user>pat</user>
+                <datum>2013-04-12T12:24:58.766+02:00</datum>
+                <nachricht>lecker</nachricht>
             </kommentar>
         </kommentare>
     </rezept>
